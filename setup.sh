@@ -77,7 +77,6 @@ else
         echo "Moving DB Folder..."
         mv /var/lib/mysql /shared && mv /shared/mysql /shared/db && ln -s /shared/db /var/lib/mysql
     fi
-    service mysql start
 
     echo "Setup complete. Login credentials saved in /shared/logs"
     cp /opt/seafile/aio_seafile-server.log /shared/logs/setup.log
@@ -86,6 +85,4 @@ else
     chown -R root:root /shared/logs
     chown -R root:root /shared/seafile
     chown -R root:root /opt/seafile
-    /opt/seafile/seafile-server-latest/seafile.sh start
-    /opt/seafile/seafile-server-latest/seahub.sh start
 fi
