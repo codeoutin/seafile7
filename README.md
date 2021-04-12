@@ -4,7 +4,7 @@ You can also download the image from [Docker Hub](https://hub.docker.com/r/stege
 
 ## Run
 To run the container you could use 
-`docker run -p 80:80 --name sf7 -i -t seafile7`
+`docker run -p 80:80 --name sf7 -i -t stegerpa/seafile7`
 
 ## Synology Setup
 * Open Docker, go to Tab "Image", Add, Add from URL and enter on URL: `stegerpa/seafile7`
