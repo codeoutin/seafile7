@@ -5,7 +5,7 @@ then
 else
     service mysql start
     # Run Seafile setup
-    wget --no-check-certificate https://raw.githubusercontent.com/haiwen/seafile-server-installer/master/seafile_ubuntu
+    wget --no-check-certificate https://raw.githubusercontent.com/haiwen/seafile-server-installer/master/seafile-7.1_ubuntu
     echo "1" | bash ./seafile_ubuntu 7.0.5
 
     echo "Stopping Seafile & Moving directories"
